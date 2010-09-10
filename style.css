@@ -1,0 +1,403 @@
+/*
+Theme Name: perspective
+Description: abctech main theme
+Author: Tiltime (ken)
+Version: 1.0
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	padding: 5px 3px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body{
+	font:80% Arial, Helvetica, sans-serif;
+	background:#FFFFFF;
+	color:#686868;
+	text-align:left;
+}
+h1{
+	font-size:32px;
+}
+h2{
+	font-size:24px;
+}
+span{
+	color:#eb1c24;
+}
+.title{
+	margin-bottom:20px;
+	text-align:center;
+	border-bottom:1px solid #e6e6e6;
+}
+h3,h4{
+	font-size:18px;
+	color:#282828;
+}
+strong{
+	font-weight:bold;
+}
+input{
+	border:1px solid #ccc;
+	padding:5px;
+}
+input:focus{
+	border-color:#7B7566;
+}
+p,big{
+	margin:0;
+	padding:5px 3px;
+	font-size:12px;
+	line-height:1.5;
+}
+a{
+	color:#eb1c24;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.container{
+	width:960px;
+	margin:0 auto;
+}
+.container_inner{
+	padding:0 10px;
+}
+.clearfix{
+	clear:both;
+	display:block;
+	visibility:hidden;
+	overflow:hidden;
+	width:0;
+	height:0;
+}
+#content{
+	padding:0 15px 0 0;
+}
+#content blockquote{
+	border:1px solid #e6e6e6;
+	background-color:#f7f7f7;
+}
+#header{
+	background:url(images/bg_header.jpg) repeat-x 0 0;
+	height:107px;
+	position:relative;
+	padding-top:15px;
+}
+#header  a#logo{
+	display:block;
+	background:url(images/abctech_logo.jpg) no-repeat 0 0;
+	width:110px;
+	height:83px;
+	text-indent:-4000em;
+	border: none;
+	float: left;
+	margin:10px 0 0 0;
+}
+#menu{
+	float:right;
+}
+#menu ul{
+	margin:0;
+	padding:0;
+}
+#menu ul li{
+	list-style:none;
+	margin:5px 10px 0 0;
+	padding:0;
+	float:left;
+	display:inline;
+	color: #9c9c9c;
+}
+#menu ul li a{
+	margin:0;
+	float:left;
+	display:block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	padding:42px 7px 42px 7px;
+	color: #999999;
+}
+#menu ul li a:hover{
+	color:#eb1c24;
+}
+.current_page_item, .current-menu-item, .current-post-parent{
+	border-top:solid 1px #e6e6e6;
+	border-right:solid 1px #e6e6e6;
+	border-left:solid 1px #e6e6e6;
+	border-bottom:solid 1px #FFFFFF;
+	background-color:#FFFFFF;
+	color:#eb1c24;
+}
+#wrapper{
+	background:white url(images/layout.jpg) no-repeat bottom center;
+	padding-bottom:15px;
+	min-height:500px;
+}
+#mainContent{
+	padding:20px 0;
+}
+#left-column{
+	float:left;
+	width:640px;
+}
+#right-column{
+	width:300px;
+	float:right;
+}
+#right-column h3{
+	border-bottom:3px solid #e6e6e6;
+}
+#sidebar{
+	margin:5px 0;
+}
+#sidebar li{
+	border:1px solid #e6e6e6;
+	margin-bottom:20px;
+	padding:0 15px;
+}
+#sidebar h4{
+	border-bottom:3px solid #e6e6e6;
+}
+.techno{
+	margin-top:20px;
+	padding:0 10px;
+	border-color:#FFFFFF;
+	border-style:none;
+}
+.sidebox{
+	border:1px solid #e6e6e6;
+	margin-bottom:20px;
+	padding:0 15px;
+}
+.jobs li{
+	padding:8px 3px;
+	border-bottom:1px solid #e6e6e6;
+}
+.jobs li a{
+	font-size:14px;
+	text-decoration:none;
+}
+.jobs li a:hover{
+	color:#282828;
+	text-decoration:underline;
+}
+.date{
+	float:right;
+	color:#b3b3b3;
+	font-size:12px;
+	font-style:italic;
+}
+.see-all{
+	color:#282828;
+	font-size:14px;
+	text-decoration:underline;
+	font-style:italic;
+}
+.see-all:hover{
+	color:#b3b3b3;
+}
+.align-right{
+	text-align:right;
+}
+.col-8{
+	width:350px;
+}
+.col-16{
+	width:270px;
+}
+.img-left{
+	float:left;
+}
+#intro{
+	margin-top:10px;
+}
+#intro h4{
+	padding-left:85px;
+}
+#intro h4 a{
+	color:#282828;
+	text-decoration:none;
+}
+#intro h4 a:hover{
+	text-decoration:none;
+}
+#intro p{
+	padding-left:85px;
+}
+#intro li{
+	float:left;
+	width:290px;
+	padding-right:25px;
+	margin-bottom:5px;
+}
+.thumbnail-frontpage{
+	height:40px;
+	widht:76px;
+}
+.partner li{
+	float:left;
+	display:block;
+	width:100px;
+	height:50px;
+	margin-top:10px;
+	padding-left:25px;
+}
+.partner a:hover{
+	border:1px solid #666666;
+}
+.partner a{
+	height:50px;
+	width:100px;
+	display:block;
+	border:1px solid #e6e6e6;
+}
+.footerbox{
+	float:left;
+	margin-right:15px;
+	padding-bottom:5px;
+}
+.footerbox img{
+	float:left;
+	margin-right:15px;
+	margin-top:5px;
+}
+#footer{
+}
+#footer-wrap{
+	background-color:#282828;
+	color:#636363;
+}
+#footer h4{
+	color:#ffffff;
+	background:url(images/line.jpg) repeat-x bottom right;
+	margin-bottom:10px;
+}
+#footer a{
+	text-decoration:none;
+	color:#ffffff;
+}
+.copyright{
+	margin-top:10px;
+	background:url(images/line.jpg) repeat-x top left;
+}
+
+
+
+/*wordpress default csss*/
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* optional rounded corners for browsers that support it */
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/*post entry*/
+.page-title, .entry-title{
+	border-bottom: 3px #666666 solid;
+	margin-bottom: 15px;
+}
+.entry-content{
+	margin-bottom:10px;
+}
+.jobs-item{
+	border-bottom:2px #e6e6e6 solid;
+}
+.entry-meta{
+	color:#b3b3b3;
+	font-size:12px;
+	font-style:italic;
+	text-align:right;
+}
+.entry-meta a{
+	text-decoration:none;
+	color:#b3b3b3;
+}
+.entry-date{
+	color:#b3b3b3;
+}
+.navigation{
+	padding:5px 0;
+	border-top:2px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+}
+.nav-previous{
+	float:left;
+}
+.nav-next{
+	text-align:right;
+}

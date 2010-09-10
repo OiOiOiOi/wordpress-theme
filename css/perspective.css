@@ -1,0 +1,276 @@
+@charset"utf-8";
+/*CSS Reset by Yahoo!*/
+body,div,dl,dt,dd,ul,ol,
+li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,
+blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+	font-family:'Arial', Helvetica, sans-serif;
+	color:#282828;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body{
+	font:80% Arial, Helvetica, sans-serif;
+	background:#FFFFFF;
+	color:#686868;
+	text-align:left;
+}
+h1,h2{
+	font-size:30px;
+	padding: 5px 3px;
+	
+}
+span{
+	color:#eb1c24;
+}
+.title{
+	padding:3px 0 5px 0;
+	text-align:center;
+	border-bottom:1px solid #e6e6e6;
+}
+h3,h4{
+	font-size:18px;
+	color:#000000;
+	padding:4px 3px ;
+}
+strong{
+	font-weight:bold;
+}
+input{
+	border:1px solid #ccc;
+	padding:5px;
+}
+input:focus{
+	border-color:#7B7566;
+}
+p,big{
+	margin:0;
+	padding:5px 0;
+	font-size:12px;
+	line-height:1.5;
+}
+a{
+	color:#eb1c24;
+}
+a:hover{
+	text-decoration:none;
+}
+.container{
+	width:960px;
+	margin:0 auto;
+}
+.container_inner{
+	padding:0 10px;
+}
+.clearfix{
+	clear:both;
+	display:block;
+	visibility:hidden;
+	overflow:hidden;
+	width:0;
+	height:0;
+}
+#header{
+	background:url(../images/bg_header.jpg) repeat-x 0 0;
+	height:107px;
+	position:relative;
+	padding-top:15px;
+}
+#header h1{
+	margin:0;
+	padding:0;
+}
+#header h1 a#logo{
+	display:block;
+	background:url(../images/abctech_logo.jpg) no-repeat 0 0;
+	width:110px;
+	height:83px;
+	text-indent:-4000em;
+	border: none;
+	float: left;
+	margin:10px 0 0 0;
+}
+#navigation{
+	float:right;
+}
+#navigation ul{
+	margin:0;
+	padding:0;
+}
+#navigation ul li{
+	list-style:none;
+	margin:5px 10px 0 0;
+	padding:0;
+	float:left;
+	display:inline;
+}
+#navigation ul li a{
+	margin:0;
+	float:left;
+	display:block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	color: #9c9c9c;
+	padding:42px 7px 42px 7px;
+}
+#navigation ul li a:hover{
+	color:#eb1c24;
+}
+#navigation ul li a#current{
+	border-top:solid 1px #e6e6e6;
+	border-right:solid 1px #e6e6e6;
+	border-left:solid 1px #e6e6e6;
+	border-bottom:solid 1px #FFFFFF;
+	background-color:#FFFFFF;
+	color:#eb1c24;
+}
+#wrapper{
+	background:white url(../images/layout.jpg) no-repeat bottom center;
+	padding-bottom:15px;
+}
+#mainContent{
+	padding:20px 0;
+}
+#left-column{
+	float:left;
+	width:640px;
+}
+#right-column{
+	width:300px;
+	float:right;
+}
+#right-column h3{
+	border-bottom:3px solid #e6e6e6;
+}
+.techno{
+	margin-top:20px;
+	padding:0 10px;
+}
+.sidebox{
+	border:1px solid #e6e6e6;
+	margin-top:20px;
+	padding:0 15px;
+}
+.jobs li{
+	padding:8px 3px;
+	border-bottom:1px solid #e6e6e6;
+}
+.jobs li a{
+	font-size:14px;
+	text-decoration:none;
+}
+.jobs li a:hover{
+	color:#282828;
+	text-decoration:underline;
+}
+.date{
+	float:right;
+	color:#b3b3b3;
+	font-size:12px;
+	font-style:italic;
+}
+.see-all{
+	color:#282828;
+	font-size:14px;
+	text-decoration:underline;
+	font-style:italic;
+}
+.align-right{
+	text-align:right;
+}
+.col-8{
+	width:350px;
+}
+.col-16{
+	width:270px;
+}
+.img-left{
+	float:left;
+}
+#intro{
+	margin-top:20px;
+}
+#intro h4{
+	padding-left:85px;
+}
+#intro p{
+	padding-left:85px;
+}
+#intro li{
+	float:left;
+	width:290px;
+	padding-right:25px;
+	margin-bottom:5px;
+}
+.partner li{
+	float:left;
+	display:block;
+	width:100px;
+	height:50px;
+	margin-top:10px;
+	padding-left:25px;
+}
+.partner img{
+	border:1px solid #e6e6e6;
+}
+.footerbox{
+	float:left;
+	margin-right:15px;
+	padding-bottom:5px;
+}
+.footerbox img{
+	float:left;
+	margin-right:15px;
+	margin-top:5px;
+}
+#footer{
+}
+#footer-wrap{
+	background-color:#282828;
+	color:#636363;
+}
+#footer h4{
+	color:#ffffff;
+	background:url(../images/line.jpg) repeat-x bottom right;
+	margin-bottom:10px;
+}
+#footer a{
+	text-decoration:none;
+	color:#ffffff;
+}
+.copyright{
+	margin-top:10px;
+	background:url(../images/line.jpg) repeat-x top left;
+}
