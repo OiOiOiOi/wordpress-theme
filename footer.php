@@ -9,7 +9,7 @@
 				<div class="footerbox col-8 first" id="post-<?php the_ID(); ?>">
 					<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( '%s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
 					<img class="img-left" src="http://localhost/wordpress/wp-content/themes/perspective/images/about_thumbnail.jpg"/>
-					<p><?php the_excerpt(); ?></p>
+					<?php the_excerpt(); ?>
 				</div>
 <?php endwhile; ?>
 				<div class="footerbox col-16">
