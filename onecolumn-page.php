@@ -20,12 +20,13 @@ get_header(); ?>
 									<?php edit_post_link( __( 'Edit'), '<span class="edit-link">', '</span>' ); ?>
 								</div><!-- .entry-content -->
 							</div><!-- #post-## -->
+							<div class="clearfix"></div>
 							<?php comments_template( '', true ); ?>
 
-<?php endwhile; ?>
-						<div class="clearfix"></div>
+<?php endwhile; ?>					
 						</div>
-					</div>	
+					</div>
+					<div class="clearfix"></div>					
 				</div>
 			</div>	
 </div>				
