@@ -35,7 +35,7 @@ wp_reset_query();?>
 							<?php 
 							query_posts('category_name=Jobs');
 							while ( have_posts() ) : the_post(); ?>
-								<li id="post-<?php the_ID(); ?">><span class="date"><?php get_the_date();?></span><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'jobs %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+								<li id="post-<?php the_ID(); ?>"><span class="date"><?php get_the_date();?></span><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'jobs %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></li>
 							<?php endwhile; 														?>
 							</ul>
 							<p class="align-right">
