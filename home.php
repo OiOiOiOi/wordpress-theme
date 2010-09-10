@@ -13,7 +13,7 @@ get_header(); ?>
 					<div id="left-column">
 						<ul id="intro">
 <?php 
-/*loop for query post in page*/
+/*loop for query child page which we want to show*/
 	$page_id = wt_get_ID_by_page_name('about');
 	query_posts( array( 'post_type' => 'page','post_parent' => $page_id ) );
 	while ( have_posts() ) : the_post(); ?>	
