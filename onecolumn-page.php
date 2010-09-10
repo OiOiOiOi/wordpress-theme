@@ -23,6 +23,7 @@ get_header(); ?>
 							<?php comments_template( '', true ); ?>
 
 <?php endwhile; ?>
+						<div class="clearfix"></div>
 						</div>
 					</div>	
 				</div>

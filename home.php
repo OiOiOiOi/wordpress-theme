@@ -18,9 +18,9 @@ get_header(); ?>
 
 	while ( have_posts() ) : the_post(); ?>	
 							<li id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-								<img class="img-left" src="http://localhost/wordpress/wp-content/themes/perspective/images/<?php the_title(); ?>.jpg"/>
+								<img class="img-left" src="http://localhost/wordpress/wp-content/themes/perspective/images/<?php strtolower(the_title()); ?>.jpg"/>
 								<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( '%s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
-								<p><?php the_excerpt(); ?></p>
+								<?php the_excerpt(); ?>
 								</li>
 <?php endwhile; ?>
 <?php 
