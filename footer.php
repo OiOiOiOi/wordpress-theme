@@ -8,13 +8,13 @@
 	while ( have_posts() ) : the_post(); ?>	
 				<div class="footerbox col-8 first" id="post-<?php the_ID(); ?>">
 					<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( '%s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
-					<img class="img-left" src="http://localhost/wordpress/wp-content/themes/perspective/images/about_thumbnail.jpg"/>
+					<?php the_post_thumbnail(array(75,78), array('class' => 'img-left'));?>
 					<?php the_excerpt(); ?>
 				</div>
 <?php endwhile; ?>
 				<div class="footerbox col-16">
-					<h4><a title="office" rel="bookmark" href="/contact">Office</a></h4>
-					<img class="img-left" src="http://localhost/wordpress/wp-content/themes/perspective/images/office_thumbnail.jpg"/>
+					<h4><a title="office" rel="bookmark" href="/office">Office</a></h4>
+					<img class="img-left" src="http://wwww.abctech-thailand.com/wp-content/themes/perspective/images/office_thumbnail.jpg"/>
 					<p>
 					Unit 1701-1  17th Floor<br>
 					Exchange Tower<br>

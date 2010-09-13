@@ -8,7 +8,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="container_inner">
 				<div id="mainContent">			
-					<img title="abctech" src="http://localhost/wordpress/wp-content/themes/perspective/images/perspective.jpg" height="138"/>
+					<img title="abctech" src="http://www.abctech-thailand.com/wp-content/themes/perspective/images/perspective.jpg" height="138"/>
 					<h1 class="title">Welcome to <span>ABC</span> Tech 's home on the Internet.</h1>
 					<div id="left-column">
 						<ul id="intro">
