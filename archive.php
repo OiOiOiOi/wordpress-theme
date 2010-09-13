@@ -15,8 +15,8 @@
 get_header(); ?>
 
 		<div id="container">
-			<div id="content" role="main">
-
+			<div class="container_inner">
+				<div id="mainContent">
 <?php
 	/* Queue the first post, that way we know
 	 * what date we're dealing with (if that is the case).
@@ -39,7 +39,8 @@ get_header(); ?>
 				<?php _e( 'Blog Archives', 'twentyten' ); ?>
 <?php endif; ?>
 			</h1>
-
+			<div id="left-column">
+					<div id="content">
 <?php
 	/* Since we called the_post() above, we need to
 	 * rewind the loop back to the beginning that way
@@ -55,7 +56,7 @@ get_header(); ?>
 ?>
 
 			</div><!-- #content -->
-		</div><!-- #container -->
+		</div><!-- #left column -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

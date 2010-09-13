@@ -5,7 +5,10 @@ add_action( 'init', 'register_my_menu' );
 function register_my_menu() {
 	register_nav_menu( 'primary-menu', __( 'Primary Menu' ) );
 }
+/*add image thumbnail for post & page*/
 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 76, 40 ); // 76 pixels wide by 40 pixels tall, box resize mode
 /*Make the "read more" link to the post */
 
 function new_excerpt_more($more) {
@@ -37,5 +40,13 @@ function get_posted_on() {
 			get_the_author()
 		)
 	);
+}
+
+/*get id by name */
+function wt_get_ID_by_page_name($page_name)
+{
+	global $wpdb;
+	$page_name_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '".$page_name."'");
+	return $page_name_id;
 }
 ?>

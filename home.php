@@ -13,12 +13,12 @@ get_header(); ?>
 					<div id="left-column">
 						<ul id="intro">
 <?php 
-/*loop for query post in category int*/
-	query_posts('category_name=introduce');
-
+/*loop for query child page which we want to show*/
+	$page_id = wt_get_ID_by_page_name('about');
+	query_posts( array( 'post_type' => 'page','post_parent' => $page_id ) );
 	while ( have_posts() ) : the_post(); ?>	
 							<li id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
-								<img class="img-left" src="http://www.abctech-thailand.com/wp-content/themes/perspective/images/<?php echo strtolower(get_the_title()); ?>.jpg"/>
+								<?php the_post_thumbnail(array(76,40), array('class' => 'img-left'));?> 
 								<h4><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( '%s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
 								<?php the_excerpt(); ?>
 								</li>
@@ -57,7 +57,7 @@ wp_reset_query();?>
 						<div class="techno">
 							<h3>Our technology</h3>
 							<ul class="partner">
-								<?php wp_list_bookmarks('title_li=&categorize=0&category_name=tech&show_image=1&limit=6'); ?>
+								<?php wp_list_bookmarks('title_li=&categorize=0&category_name=tech&show_image=1&limit=6&orderby=rand'); ?>
 							</ul>
 						</div>
 					</div>
