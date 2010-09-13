@@ -13,7 +13,7 @@
 				</div>
 <?php endwhile; ?>
 				<div class="footerbox col-16">
-					<h4><a title="office" rel="bookmark" href="/office">Office</a></h4>
+					<h4><a title="office" rel="bookmark" href="http://wwww.abctech-thailand.com/office">Office</a></h4>
 					<img class="img-left" src="http://wwww.abctech-thailand.com/wp-content/themes/perspective/images/office_thumbnail.jpg"/>
 					<p>
 					Unit 1701-1  17th Floor<br>
@@ -22,7 +22,7 @@
 					Bangkok 10110, Thailand.</p>
 				</div>
 				<div class="footerbox col-16">
-					<h4><a title="contact us" rel="bookmark" href="/contact">Contact us</a></h4>
+					<h4><a title="contact us" rel="bookmark" href="http://wwww.abctech-thailand.com/contact">Contact us</a></h4>
 					<p>
 						<strong>Phone : </strong> +66 (0) 2633 4340
 						<br>
