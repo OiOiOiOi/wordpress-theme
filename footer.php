@@ -24,9 +24,9 @@
 				<div class="footerbox col-16">
 					<h4><a title="contact us" rel="bookmark" href="http://blogs.startsiden.no/abctech/contact/">Contact us</a></h4>
 					<p>
-						<strong>Phone : </strong> +66 (0) 2633 4340
+						<strong>Phone : </strong> +66 (0) 2663 4340
 						<br>
-						<strong>Fax : </strong> +66 (0) 2633 4339
+						<strong>Fax : </strong> +66 (0) 2663 4339
 						<br>
 						<strong>E-mail : </strong> contact@abctech-thailand.com
 						<br>
