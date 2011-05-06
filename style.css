@@ -402,3 +402,9 @@ a:hover{
 .nav-next{
 	text-align:right;
 }
+
+.entry-content ul {
+    list-style: square;
+    margin-left: 25px;
+    margin-bottom: 0.1em;
+}
