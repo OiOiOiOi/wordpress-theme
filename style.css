@@ -421,8 +421,9 @@ a:hover{
     font-style:italic;
 }
 .entry-content img{
-    border:5px #e6e6e6 solid;
+    border:2px #e6e6e6 solid;
     display:block;
+    padding:2px;
     text-align:center;
     margin-right:10px;
     margin-bottom:10px;
