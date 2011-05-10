@@ -390,6 +390,10 @@ a:hover{
 .entry-content{
 	margin-bottom:10px;
 }
+.entry-content p{
+    font-size:13px;
+	margin-bottom:10px;
+}
 .entry-content h2{
 	font-size:26px;
     color:#686868;
@@ -420,6 +424,8 @@ a:hover{
     border:5px #e6e6e6 solid;
     display:block;
     text-align:center;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 .jobs-item{
 	border-bottom:2px #e6e6e6 solid;
@@ -447,4 +453,7 @@ a:hover{
 }
 .nav-next{
 	text-align:right;
+}
+img.no-border-img{
+    border:0 none;
 }
