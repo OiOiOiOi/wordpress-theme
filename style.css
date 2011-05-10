@@ -27,7 +27,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	padding: 5px 3px;
+	padding-bottom:5px;
 }
 ol, ul {
 	list-style: none;
@@ -79,12 +79,18 @@ h3,h4{
 	font-size:18px;
 	color:#282828;
 }
+label{
+    padding:5px;
+}
 strong{
 	font-weight:bold;
 }
-input{
+input[type="text"]{
 	border:1px solid #ccc;
-	padding:5px;
+	padding:3px 5px;
+}
+input[type="submit"]{
+	margin:5px 5px 5px 70px;
 }
 input:focus{
 	border-color:#7B7566;
@@ -194,6 +200,7 @@ a:hover{
 }
 #right-column h3{
 	border-bottom:3px solid #e6e6e6;
+    padding:3px 5px;
 }
 #sidebar{
 	margin:5px 0;
@@ -203,8 +210,16 @@ a:hover{
 	margin-bottom:20px;
 	padding:0 15px;
 }
+#sidebar h2{
+    border-bottom:3px solid #e6e6e6;
+    padding:3px 5px;
+    font-size:20px;
+}
 #sidebar h4{
 	border-bottom:3px solid #e6e6e6;
+}
+#sidebar form{
+    padding:10px 0;
 }
 .techno{
 	margin-top:20px;
@@ -369,11 +384,42 @@ a:hover{
 
 /*post entry*/
 .page-title, .entry-title{
-	border-bottom: 3px #666666 solid;
+	border-bottom: 5px #666666 solid;
 	margin-bottom: 15px;
 }
 .entry-content{
 	margin-bottom:10px;
+}
+.entry-content h2{
+	font-size:26px;
+    color:#686868;
+}
+.entry-content h3{
+	font-size:20px;
+}
+.entry-content h4{
+	font-size:20px;
+    color:#eb1c24;
+}
+.entry-content ul, .entry-content ol{
+    padding:5px 40px;
+    line-height:1.5;
+}
+.entry-content ul li{
+    list-style:disc outside;
+}
+.entry-content ol li{
+    list-style:decimal outside;
+}
+.entry-content blockquote{
+    padding:5px 20px;
+    font-size:18px;
+    font-style:italic;
+}
+.entry-content img{
+    border:5px #e6e6e6 solid;
+    display:block;
+    text-align:center;
 }
 .jobs-item{
 	border-bottom:2px #e6e6e6 solid;
@@ -401,10 +447,4 @@ a:hover{
 }
 .nav-next{
 	text-align:right;
-}
-
-.entry-content ul {
-    list-style: square;
-    margin-left: 25px;
-    margin-bottom: 0.1em;
 }
