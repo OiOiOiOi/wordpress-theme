@@ -16,7 +16,7 @@
 					<h4><a title="office" rel="bookmark" href="http://blogs.startsiden.no/abctech/office/">Office</a></h4>
 					<img class="img-left" src="http://www.abctech-thailand.com/wp-content/themes/perspective/images/office_thumbnail.jpg"/>
 					<p>
-					Unit 1701-1  17th Floor<br>
+					Unit 1101, 11th Floor<br>
 					Exchange Tower<br>
 					388 Sukhumvit Road, Klongtoey,<br>
 					Bangkok 10110, Thailand.</p>
