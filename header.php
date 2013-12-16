@@ -1,7 +1,7 @@
 <?php
 /**
-	Theme Name: Perspective with new abctech logo
-	Description: ABCTech theme for WordPress.
+	Theme Name: Perspective2
+	Description: ABCTech theme with new logo for WordPress.
 	Author: Ken@abctech
 .
  */
